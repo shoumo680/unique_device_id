@@ -1,0 +1,29 @@
+name: unique_device_id
+description: >
+  Get unique device id For Android/iOS
+  Android(SSAID), iOS(dentifierForVendor)
+  alternative, UUID
+version: 0.1.2
+publish_to: https://pub.dartlang.org
+repository: https://github.com/jukqaz/flutter_unique_device_id
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=2.2.3"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.jukqaz.unique_device_id
+        pluginClass: UniqueDeviceIdPlugin
+      ios:
+        pluginClass: UniqueDeviceIdPlugin

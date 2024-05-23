@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="generator" content="made with love by dartdoc 0.32.4">
+  <meta name="description" content="unique_device_id API docs, for the Dart programming language.">
+  <title>unique_device_id - Dart API docs</title>
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+</head>
+
+<body data-base-href=""
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li class="self-crumb">unique_device_id package</li>
+  </ol>
+  <div class="self-name">unique_device_id</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li class="self-crumb">unique_device_id package</li>
+    </ol>
+    
+    <h5 class="hidden-xs"><span class="package-name">unique_device_id</span> <span class="package-kind">package</span></h5>
+    <ol>
+          <li class="section-title">Libraries</li>
+          <li><a href="unique_device_id/unique_device_id-library.html">unique_device_id</a></li>
+    </ol>
+  </div>
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <section class="desc markdown">
+        <h1 id="unique_device_id">unique_device_id</h1>
+<p>Get unique device id</p>
+<h2 id="notice-for-android">Notice for android</h2>
+<ol>
+<li>Require minSdk 23, WRITE_EXTERNAL_STORAGE permission</li>
+<li>If SSAID cannot be retrieved, a random UUID can be generated and stored in an encrypted file for use. </li>
+</ol>
+<h2 id="getting-started">Getting Started</h2>
+<ol>
+<li>
+<p>getUniqueId()</p>
+<ul>
+<li>Get unique device id (if id does not exist, generate and save uuid)
+<ul>
+<li>Android: SSAID</li>
+<li>iOS: identifierForVendor<br>
+<code>UniqueDeviceId.instance.getUniqueId()</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>setDefaultUseUUID()</p>
+<ul>
+<li>Use UUID instead of SSAID(Android), identifierForVendor(iOS)<br>
+<code>UniqueDeviceId.instance.setDefaultUseUUID(bool)</code></li>
+</ul>
+</li>
+<li>
+<p>setSecretKey()</p>
+<ul>
+<li>Set android crypto secret key (require over 16 digits)<br>
+<code>UniqueDeviceId.instance.setSecretKey(String)</code></li>
+</ul>
+</li>
+</ol>
+      </section>
+      
+        <section class="summary">
+            <h2>Libraries</h2>
+          <dl>
+            <dt id="unique_device_id">
+              <span class="name"><a href="unique_device_id/unique_device_id-library.html">unique_device_id</a></span>             
+            </dt>
+            <dd>
+               
+            </dd>
+          </dl>
+        </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div>
+
+</main>
+
+<footer>
+  <span class="no-break">
+    unique_device_id
+      0.0.8
+  </span>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>
